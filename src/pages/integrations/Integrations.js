@@ -52,11 +52,11 @@ const renderMenu = ({ onClose, left, top, className }, ref) => {
     return (
         <Popover ref={ref} className={className} style={{ left, top }} full>
             <Dropdown.Menu onSelect={handleSelect}>
-                <Dropdown.Item eventKey={1}>Follow</Dropdown.Item>
-                <Dropdown.Item eventKey={2}>Sponsor</Dropdown.Item>
-                <Dropdown.Item eventKey={3}>Add to friends</Dropdown.Item>
-                <Dropdown.Item eventKey={4}>View Profile</Dropdown.Item>
-                <Dropdown.Item eventKey={5}>Block</Dropdown.Item>
+                <Dropdown.Item eventKey={1}>Edit</Dropdown.Item>
+                <Dropdown.Item eventKey={2}>Enable</Dropdown.Item>
+                <Dropdown.Item eventKey={3}>Duplicate</Dropdown.Item>
+                <Dropdown.Item eventKey={4}>New Workflow</Dropdown.Item>
+                <Dropdown.Item eventKey={5}>Delete</Dropdown.Item>
             </Dropdown.Menu>
         </Popover>
     );
