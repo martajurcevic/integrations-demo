@@ -1,5 +1,4 @@
 import { React, useState, useEffect } from 'react';
-import "../home/styles.css"
 import integrationService from '../../services/integrationService';
 import MoreIcon from '@rsuite/icons/legacy/More';
 import { Dropdown } from "rsuite";
@@ -77,7 +76,7 @@ const ThirdCell = ({ rowData, ...rest }) => {
 };
 
 
-const Integrations = () => {
+const Categories = () => {
     const [integrations, setIntegrations] = useState();
 
     useEffect(() => {
@@ -97,7 +96,7 @@ const Integrations = () => {
             <h3>All categories</h3>
             {
                 integrations &&
-                <Table data={integrations} id="table" showHeader={false} rowHeight={300}>
+                <Table data={integrations} id="table" showHeader={false} rowHeight={70}>
                     <Column width={200}>
                         <HeaderCell>first column</HeaderCell>
                         <FirstCell />
@@ -118,5 +117,5 @@ const Integrations = () => {
     );
 }
 
-export default Integrations;
+export default Categories;
 
